@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance & Shift Management | Rajby Textile Industries</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-emblem">
+          <svg style="width:24px;height:24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">RAJBY TEXTILES</span>
+          <span class="brand-tagline">Karachi, Pakistan</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">Overview</div>
+        <a href="index.html" class="nav-link">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+          <span>Executive Dashboard</span>
+        </a>
+
+        <div class="nav-section-title">Plant Workforce</div>
+        <a href="employees.html" class="nav-link">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          <span>Employee Directory</span>
+        </a>
+        <a href="departments.html" class="nav-link">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          <span>Textile Departments</span>
+        </a>
+
+        <div class="nav-section-title">Factory Operations</div>
+        <a href="attendance.html" class="nav-link active">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <span>Attendance & Shifts</span>
+        </a>
+        <a href="payroll.html" class="nav-link">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span>Payroll Processing</span>
+        </a>
+        <a href="salary-slip.html" class="nav-link">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Salary Slips (Payslips)</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-avatar">HR</div>
+        <div class="user-info">
+          <div class="user-name">HR & Plant Operations</div>
+          <div class="user-role">Karachi Plant S.I.T.E.</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Workspace -->
+    <div class="main-wrapper">
+      <header class="top-header">
+        <div class="header-left">
+          <button class="mobile-menu-btn" aria-label="Toggle navigation">
+            <svg style="width:22px;height:22px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+          <div>
+            <h1 class="page-title">Biometric Attendance & Overtime</h1>
+            <p class="page-subtitle">Track check-in/out, factory floor shifts, late arrivals, and overtime hours</p>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <div class="location-badge">
+            <svg style="width:14px;height:14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Karachi, PK</span>
+          </div>
+          <div class="current-date-badge" id="currentDateBadge">
+            <svg style="width:14px;height:14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            <span>Loading date...</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="page-content">
+        <!-- Live Counters Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px; margin-bottom: 22px;">
+          <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 14px 16px;">
+            <div style="font-size: 11px; font-weight: 700; color: #065f46; text-transform: uppercase;">Present</div>
+            <div id="attMetricPresent" style="font-size: 22px; font-weight: 800; color: #065f46; margin-top: 4px;">0</div>
+          </div>
+          <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 14px 16px;">
+            <div style="font-size: 11px; font-weight: 700; color: #991b1b; text-transform: uppercase;">Absent</div>
+            <div id="attMetricAbsent" style="font-size: 22px; font-weight: 800; color: #991b1b; margin-top: 4px;">0</div>
+          </div>
+          <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 14px 16px;">
+            <div style="font-size: 11px; font-weight: 700; color: #075985; text-transform: uppercase;">Half Day</div>
+            <div id="attMetricHalfDay" style="font-size: 22px; font-weight: 800; color: #075985; margin-top: 4px;">0</div>
+          </div>
+          <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 14px 16px;">
+            <div style="font-size: 11px; font-weight: 700; color: #92400e; text-transform: uppercase;">Leave</div>
+            <div id="attMetricLeave" style="font-size: 22px; font-weight: 800; color: #92400e; margin-top: 4px;">0</div>
+          </div>
+          <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 14px 16px;">
+            <div style="font-size: 11px; font-weight: 700; color: #c2410c; text-transform: uppercase;">Late Arrival</div>
+            <div id="attMetricLate" style="font-size: 22px; font-weight: 800; color: #c2410c; margin-top: 4px;">0</div>
+          </div>
+          <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 14px 16px;">
+            <div style="font-size: 11px; font-weight: 700; color: var(--denim); text-transform: uppercase;">Overtime Hours</div>
+            <div id="attMetricOT" style="font-size: 22px; font-weight: 800; color: var(--denim); margin-top: 4px;">0 hrs</div>
+          </div>
+        </div>
+
+        <!-- Attendance Content Card -->
+        <div class="content-card">
+          <div class="content-card-header">
+            <!-- Tab switchers -->
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <button type="button" id="tabDailyBtn" class="btn btn-primary btn-sm" onclick="switchAttendanceView('daily')">
+                Daily Roster
+              </button>
+              <button type="button" id="tabMonthlyBtn" class="btn btn-secondary btn-sm" onclick="switchAttendanceView('monthly')">
+                Monthly Log
+              </button>
+              <button type="button" id="tabDeptBtn" class="btn btn-secondary btn-sm" onclick="switchAttendanceView('department')">
+                Department Audit
+              </button>
+            </div>
+
+            <!-- Filters -->
+            <div class="filter-bar">
+              <!-- Daily Date -->
+              <div id="dailyControls" style="display: flex; align-items: center; gap: 8px;">
+                <label for="attendanceDailyDate" style="font-size: 12px; font-weight: 600; color: var(--text-secondary);">Date:</label>
+                <input type="date" id="attendanceDailyDate" class="input-control" style="width: 155px;">
+              </div>
+
+              <!-- Monthly Date & Employee -->
+              <div id="monthlyControls" style="display: none; align-items: center; gap: 8px;">
+                <label for="attendanceMonthFilter" style="font-size: 12px; font-weight: 600; color: var(--text-secondary);">Month:</label>
+                <input type="month" id="attendanceMonthFilter" class="input-control" style="width: 150px;">
+                <select id="attendanceEmpFilter" class="select-control" style="width: 190px;">
+                  <option value="">All Employees</option>
+                </select>
+              </div>
+
+              <!-- Department Filter -->
+              <select id="attendanceDeptFilter" class="select-control" style="width: 180px;">
+                <option value="">All Departments</option>
+              </select>
+
+              <!-- Status Filter -->
+              <select id="attendanceStatusFilter" class="select-control" style="width: 150px;">
+                <option value="">All Statuses</option>
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+                <option value="Half Day">Half Day</option>
+                <option value="Leave">Leave</option>
+                <option value="Late Arrival">Late Arrival</option>
+              </select>
+
+              <span id="attendanceCountBadge" class="badge badge-neutral">-- Records</span>
+            </div>
+
+            <!-- Mark Attendance Button -->
+            <button type="button" class="btn btn-primary" onclick="openMarkAttendanceModal()">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+              <span>Mark Attendance</span>
+            </button>
+          </div>
+
+          <!-- Attendance Table Container -->
+          <div id="attendanceTableContainer" class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Punch Ref</th>
+                  <th>Staff Name & ID</th>
+                  <th>Department</th>
+                  <th>Date (DD-MM-YYYY)</th>
+                  <th>Check In &rarr; Out</th>
+                  <th>Shift</th>
+                  <th>Status</th>
+                  <th>Overtime</th>
+                  <th style="text-align: right;">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="attendanceTableBody">
+                <tr>
+                  <td colspan="9" style="text-align: center; padding: 32px;">
+                    <div class="loading-spinner"></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Department Report Container (Initially Hidden) -->
+          <div id="deptReportContainer" class="table-responsive" style="display: none; padding: 0;">
+            <div style="padding: 14px 20px; background: #eef4fa; border-bottom: 1px solid var(--border-color); font-weight: 700; color: var(--primary);" id="deptReportTitle">
+              Department-wise Attendance Audit
+            </div>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Textile Department</th>
+                  <th>Total Headcount</th>
+                  <th>Present</th>
+                  <th>Absent</th>
+                  <th>Half Day</th>
+                  <th>On Leave</th>
+                  <th>Unmarked</th>
+                  <th>Plant Overtime</th>
+                </tr>
+              </thead>
+              <tbody id="deptReportTableBody">
+                <!-- Rendered dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Modal: Mark / Edit Attendance (Scrollable & Responsive) -->
+  <div id="attendanceModal" class="modal-overlay">
+    <div class="modal-dialog" style="max-width: 520px;">
+      <div class="modal-header">
+        <h3 id="attModalTitle" class="modal-title">Mark Factory Attendance</h3>
+        <button type="button" class="modal-close-btn" onclick="closeModal('attendanceModal')">
+          <svg style="width:20px;height:20px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <form id="attendanceForm" style="display:flex; flex-direction:column; flex:1 1 auto; min-height:0; overflow:hidden;">
+        <div class="modal-body">
+          <div class="form-group" id="attEmployeeGroup" style="margin-bottom: 14px;">
+            <label class="form-label" for="attEmployeeId">Select Staff Member <span class="required">*</span></label>
+            <select id="attEmployeeId" class="select-control" required>
+              <option value="">Select Employee</option>
+            </select>
+          </div>
+
+          <div class="form-group" id="attDateGroup" style="margin-bottom: 14px;">
+            <label class="form-label" for="attDate">Attendance Date <span class="required">*</span></label>
+            <input type="date" id="attDate" class="input-control" required>
+            <span class="form-hint">Duplicate entry for the same employee and date is automatically prevented.</span>
+          </div>
+
+          <div class="form-grid" style="margin-bottom: 14px;">
+            <div class="form-group">
+              <label class="form-label" for="attCheckIn">Biometric Check-In</label>
+              <input type="text" id="attCheckIn" class="input-control" value="08:00 AM" placeholder="e.g. 07:55 AM">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="attCheckOut">Biometric Check-Out</label>
+              <input type="text" id="attCheckOut" class="input-control" value="05:00 PM" placeholder="e.g. 05:05 PM">
+            </div>
+          </div>
+
+          <div class="form-grid" style="margin-bottom: 14px;">
+            <div class="form-group">
+              <label class="form-label" for="attStatus">Attendance Status <span class="required">*</span></label>
+              <select id="attStatus" class="select-control" required>
+                <option value="Present">Present</option>
+                <option value="Late Arrival">Late Arrival</option>
+                <option value="Half Day">Half Day</option>
+                <option value="Leave">Approved Leave</option>
+                <option value="Absent">Absent</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="attShift">Assigned Shift</label>
+              <select id="attShift" class="select-control">
+                <option value="Morning Shift">Morning Shift (06:00 - 14:00)</option>
+                <option value="Evening Shift">Evening Shift (14:00 - 22:00)</option>
+                <option value="Night Shift">Night Shift (22:00 - 06:00)</option>
+                <option value="General Office Shift">General Office Shift (09:00 - 18:00)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grid" style="margin-bottom: 14px;">
+            <div class="form-group">
+              <label class="form-label" for="attOvertimeHours">Overtime Hours (OT)</label>
+              <input type="number" id="attOvertimeHours" class="input-control" min="0" max="8" step="0.5" value="0.0" placeholder="0.0">
+              <span class="form-hint">Used for automatic overtime compensation in monthly payroll.</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="attRemarks">Remarks / Notes</label>
+              <input type="text" id="attRemarks" class="input-control" placeholder="e.g. Biometric punch, Gate pass">
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closeModal('attendanceModal')">Cancel</button>
+          <button type="submit" id="attSubmitBtn" class="btn btn-primary">Save Attendance</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/attendance.js"></script>
+</body>
+</html>

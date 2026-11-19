@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payroll Management | Rajby Textile Industries</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-emblem">
+          <svg style="width:24px;height:24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">RAJBY TEXTILES</span>
+          <span class="brand-tagline">Karachi, Pakistan</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">Overview</div>
+        <a href="index.html" class="nav-link">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+          <span>Executive Dashboard</span>
+        </a>
+
+        <div class="nav-section-title">Plant Workforce</div>
+        <a href="employees.html" class="nav-link">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          <span>Employee Directory</span>
+        </a>
+        <a href="departments.html" class="nav-link">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          <span>Textile Departments</span>
+        </a>
+
+        <div class="nav-section-title">Factory Operations</div>
+        <a href="attendance.html" class="nav-link">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <span>Attendance & Shifts</span>
+        </a>
+        <a href="payroll.html" class="nav-link active">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span>Payroll Processing</span>
+        </a>
+        <a href="salary-slip.html" class="nav-link">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Salary Slips (Payslips)</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-avatar">HR</div>
+        <div class="user-info">
+          <div class="user-name">HR & Plant Operations</div>
+          <div class="user-role">Karachi Plant S.I.T.E.</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Workspace -->
+    <div class="main-wrapper">
+      <header class="top-header">
+        <div class="header-left">
+          <button class="mobile-menu-btn" aria-label="Toggle navigation">
+            <svg style="width:22px;height:22px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+          <div>
+            <h1 class="page-title">Textile Monthly Payroll Processing</h1>
+            <p class="page-subtitle">Disbursements in Pakistani Rupees (PKR) &bull; EOBI &bull; SESSI &bull; Overtime &bull; Taxes</p>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <div class="location-badge">
+            <svg style="width:14px;height:14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Karachi, PK (PKR)</span>
+          </div>
+          <div class="current-date-badge" id="currentDateBadge">
+            <svg style="width:14px;height:14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            <span>Loading date...</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="page-content">
+        <!-- Content Card -->
+        <div class="content-card">
+          <div class="content-card-header">
+            <div class="filter-bar">
+              <!-- Month -->
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <label for="payrollMonthFilter" style="font-size: 12px; font-weight: 600; color: var(--text-secondary);">Salary Month:</label>
+                <input type="month" id="payrollMonthFilter" class="input-control" style="width: 150px;">
+              </div>
+
+              <!-- Department Filter -->
+              <select id="payrollDeptFilter" class="select-control" style="width: 180px;">
+                <option value="">All Departments</option>
+              </select>
+
+              <!-- Employee Filter -->
+              <select id="payrollEmpFilter" class="select-control" style="width: 190px;">
+                <option value="">All Employees</option>
+              </select>
+
+              <!-- Status Filter -->
+              <select id="payrollStatusFilter" class="select-control" style="width: 140px;">
+                <option value="">All Statuses</option>
+                <option value="Paid">Paid</option>
+                <option value="Approved">Approved</option>
+                <option value="Pending">Pending</option>
+              </select>
+
+              <span id="payrollCountBadge" class="badge badge-neutral">-- Records</span>
+            </div>
+
+            <!-- Generate Payroll Action -->
+            <button type="button" class="btn btn-primary" onclick="openGeneratePayrollModal()">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+              <span>Generate Monthly Payroll</span>
+            </button>
+          </div>
+
+          <!-- Total Filtered Payout Banner in PKR -->
+          <div style="padding: 12px 24px; background: #eef4fa; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 13px; font-weight: 700; color: var(--primary);">
+              Total Filtered Net Payout (PKR):
+            </span>
+            <span id="payrollTotalDisplay" style="font-size: 20px; font-weight: 900; color: var(--denim);">
+              Rs. 0
+            </span>
+          </div>
+
+          <!-- Table -->
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Payroll ID</th>
+                  <th>Staff Member</th>
+                  <th>Month</th>
+                  <th>Basic Salary</th>
+                  <th>Allowances & OT</th>
+                  <th>Total Deductions</th>
+                  <th>Net Payable</th>
+                  <th>Status</th>
+                  <th style="text-align: right;">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="payrollTableBody">
+                <tr>
+                  <td colspan="9" style="text-align: center; padding: 32px;">
+                    <div class="loading-spinner"></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Modal: Generate Payroll in PKR (Scrollable & Responsive) -->
+  <div id="generatePayrollModal" class="modal-overlay">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-header">
+        <h3 class="modal-title">
+          <svg style="width:20px;height:20px;color:var(--denim);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Compute Monthly Payroll (Pakistani Rupee - PKR)
+        </h3>
+        <button type="button" class="modal-close-btn" onclick="closeModal('generatePayrollModal')">
+          <svg style="width:20px;height:20px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <form id="payrollForm" style="display:flex; flex-direction:column; flex:1 1 auto; min-height:0; overflow:hidden;">
+        <div class="modal-body">
+          <!-- Duplicate Warning -->
+          <div id="payrollDuplicateWarning" style="display:none; padding: 12px 16px; background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px; color: #991b1b; font-size: 13px; margin-bottom: 16px;"></div>
+
+          <!-- Selection -->
+          <div class="form-grid" style="margin-bottom: 16px;">
+            <div class="form-group">
+              <label class="form-label" for="payEmployeeSelect">Select Staff Member <span class="required">*</span></label>
+              <select id="payEmployeeSelect" class="select-control" required>
+                <option value="">Select Employee to Process</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="payMonth">Payroll Month <span class="required">*</span></label>
+              <input type="month" id="payMonth" class="input-control" required>
+            </div>
+          </div>
+
+          <div id="payrollAttHint" style="font-size: 12px; color: var(--denim); font-weight: 600; margin-bottom: 16px;"></div>
+
+          <!-- Live Math Banner -->
+          <div style="background: #f8fafc; border: 1.5px solid var(--border-color); border-radius: 8px; padding: 14px 18px; margin-bottom: 20px; display: flex; justify-content: space-around; text-align: center;">
+            <div>
+              <span style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Gross Earnings (PKR)</span>
+              <div id="liveGrossDisplay" style="font-size: 16px; font-weight: 800; color: var(--success);">Rs. 0</div>
+            </div>
+            <div style="border-left: 1px solid var(--border-color); padding-left: 18px;">
+              <span style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Total Deductions</span>
+              <div id="liveDedDisplay" style="font-size: 16px; font-weight: 800; color: var(--danger);">Rs. 0</div>
+            </div>
+            <div style="border-left: 1px solid var(--border-color); padding-left: 18px;">
+              <span style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Net Payable Salary</span>
+              <div id="liveNetDisplay" style="font-size: 20px; font-weight: 900; color: var(--primary);">Rs. 0</div>
+            </div>
+          </div>
+
+          <!-- 1. Earnings (PKR) -->
+          <div class="form-section-heading">1. Monthly Earnings & Allowances (PKR)</div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="payBasic">Basic Salary (PKR) <span class="required">*</span></label>
+              <input type="number" id="payBasic" class="input-control" min="0" step="100" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="payHouseAll">House Rent Allowance (HRA)</label>
+              <input type="number" id="payHouseAll" class="input-control" min="0" step="50" value="0">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="payMedAll">Medical Allowance</label>
+              <input type="number" id="payMedAll" class="input-control" min="0" step="50" value="0">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="payTransAll">Transport Allowance</label>
+              <input type="number" id="payTransAll" class="input-control" min="0" step="50" value="0">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="payOtherAll">Other Industrial Allowances</label>
+              <input type="number" id="payOtherAll" class="input-control" min="0" step="50" value="0">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="payBonus">Attendance / Performance Bonus</label>
+              <input type="number" id="payBonus" class="input-control" min="0" step="100" value="0">
+            </div>
+          </div>
+
+          <!-- Overtime Section -->
+          <div class="form-grid" style="margin-top: 10px; background: #f0f7ff; padding: 12px; border-radius: 8px;">
+            <div class="form-group">
+              <label class="form-label" for="payOtHours">Overtime Hours (OT)</label>
+              <input type="number" id="payOtHours" class="input-control" min="0" step="0.5" value="0">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="payOtRate">Overtime Rate / Hour (PKR)</label>
+              <input type="number" id="payOtRate" class="input-control" min="0" step="10" value="0">
+            </div>
+            <div class="form-group full-width">
+              <label class="form-label" for="payOtPayment">Total Overtime Payment (PKR)</label>
+              <input type="number" id="payOtPayment" class="input-control" min="0" step="10" value="0">
+              <span class="form-hint">Calculated automatically as Overtime Hours &times; Rate.</span>
+            </div>
+          </div>
+
+          <!-- 2. Statutory & Company Deductions (PKR) -->
+          <div class="form-section-heading">2. Statutory Deductions, EOBI, SESSI & Tax (PKR)</div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="payEobiDed">EOBI Contribution (PKR)</label>
+              <input type="number" id="payEobiDed" class="input-control" min="0" step="10" value="370">
+              <span class="form-hint">Pakistani Employees' Old-Age Benefits Institution</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="paySessiDed">SESSI Contribution (PKR)</label>
+              <input type="number" id="paySessiDed" class="input-control" min="0" step="10" value="0">
+              <span class="form-hint">Sindh Employees Social Security Institution</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="payTaxDed">Income Tax Deduction (PKR)</label>
+              <input type="number" id="payTaxDed" class="input-control" min="0" step="10" value="0">
+              <span class="form-hint">FBR Pakistan Tax Slab Deduction</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="payLeaveDed">Unpaid Leave Deduction (PKR)</label>
+              <input type="number" id="payLeaveDed" class="input-control" min="0" step="10" value="0">
+              <span class="form-hint">Calculated automatically from absent days</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="payAdvanceDed">Advance Salary Deduction</label>
+              <input type="number" id="payAdvanceDed" class="input-control" min="0" step="100" value="0">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="payLoanDed">Company Loan Installment</label>
+              <input type="number" id="payLoanDed" class="input-control" min="0" step="100" value="0">
+            </div>
+
+            <div class="form-group full-width">
+              <label class="form-label" for="payOtherDed">Other Deductions (Canteen/Fine)</label>
+              <input type="number" id="payOtherDed" class="input-control" min="0" step="50" value="0">
+            </div>
+          </div>
+
+          <!-- 3. Disbursement Details -->
+          <div class="form-section-heading">3. Disbursement Authorization</div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="payStatus">Payment Status <span class="required">*</span></label>
+              <select id="payStatus" class="select-control" required>
+                <option value="Paid">Paid (Bank Transferred)</option>
+                <option value="Approved">Approved (Awaiting Transfer)</option>
+                <option value="Pending">Pending Audit</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="payDate">Disbursement Date</label>
+              <input type="date" id="payDate" class="input-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closeModal('generatePayrollModal')">Cancel</button>
+          <button type="submit" id="paySubmitBtn" class="btn btn-primary">Save & Disburse Payroll</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/payroll.js"></script>
+</body>
+</html>

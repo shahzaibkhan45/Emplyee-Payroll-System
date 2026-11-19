@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Rajby Textile Industries - Karachi, Pakistan</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <!-- Professional Textile Loom & Denim Emblem Placeholder -->
+        <div class="brand-emblem">
+          <svg style="width:24px;height:24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">RAJBY TEXTILES</span>
+          <span class="brand-tagline">Karachi, Pakistan</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">Overview</div>
+        <a href="index.html" class="nav-link active">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+          <span>Executive Dashboard</span>
+        </a>
+
+        <div class="nav-section-title">Plant Workforce</div>
+        <a href="employees.html" class="nav-link">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          <span>Employee Directory</span>
+        </a>
+        <a href="departments.html" class="nav-link">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          <span>Textile Departments</span>
+        </a>
+
+        <div class="nav-section-title">Factory Operations</div>
+        <a href="attendance.html" class="nav-link">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <span>Attendance & Shifts</span>
+        </a>
+        <a href="payroll.html" class="nav-link">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span>Payroll Processing</span>
+        </a>
+        <a href="salary-slip.html" class="nav-link">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Salary Slips (Payslips)</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-avatar">HR</div>
+        <div class="user-info">
+          <div class="user-name">HR & Plant Operations</div>
+          <div class="user-role">Karachi Plant S.I.T.E.</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Workspace -->
+    <div class="main-wrapper">
+      <header class="top-header">
+        <div class="header-left">
+          <button class="mobile-menu-btn" aria-label="Toggle navigation">
+            <svg style="width:22px;height:22px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+          <div>
+            <h1 class="page-title">Executive Plant Dashboard</h1>
+            <p class="page-subtitle">Rajby Textile Industries &bull; Denim Manufacturing Plant (Karachi, Pakistan)</p>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <div class="location-badge">
+            <svg style="width:14px;height:14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Karachi, PK (PKR)</span>
+          </div>
+          <div class="current-date-badge" id="currentDateBadge">
+            <svg style="width:14px;height:14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            <span>Loading date...</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="page-content">
+        <!-- Disclaimer notice -->
+        <div style="background: #eef4fa; border: 1px solid #c8d9ea; border-radius: 8px; padding: 10px 18px; margin-bottom: 22px; display: flex; align-items: center; justify-content: space-between; font-size: 12px; color: #1b3a5b;">
+          <span>
+            <strong>Rajby-Inspired Textile Payroll System:</strong> Tailored for Pakistani textile & apparel manufacturing operations (EOBI, SESSI, shifts, overtime & PKR).
+          </span>
+          <span class="badge badge-denim">Currency: PKR (Rs.)</span>
+        </div>
+
+        <!-- Metrics Grid in PKR -->
+        <section class="metrics-grid">
+          <!-- Total Headcount -->
+          <div class="metric-card">
+            <div class="metric-info">
+              <span class="metric-title">Total Headcount</span>
+              <span class="metric-value" id="metricTotalEmployees">--</span>
+              <span class="metric-subtext">Registered mill staff</span>
+            </div>
+            <div class="metric-icon-box icon-blue">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+          </div>
+
+          <!-- Active Staff -->
+          <div class="metric-card">
+            <div class="metric-info">
+              <span class="metric-title">Active Employees</span>
+              <span class="metric-value" id="metricActiveEmployees" style="color: var(--success);">--</span>
+              <span class="metric-subtext">On active duty roster</span>
+            </div>
+            <div class="metric-icon-box icon-green">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+          </div>
+
+          <!-- Inactive / Terminated -->
+          <div class="metric-card">
+            <div class="metric-info">
+              <span class="metric-title">Inactive Staff</span>
+              <span class="metric-value" id="metricInactiveEmployees" style="color: var(--danger);">--</span>
+              <span class="metric-subtext">Inactive / Terminated</span>
+            </div>
+            <div class="metric-icon-box icon-red">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg>
+            </div>
+          </div>
+
+          <!-- Monthly Payroll (PKR) -->
+          <div class="metric-card">
+            <div class="metric-info">
+              <span class="metric-title">Monthly Payroll</span>
+              <span class="metric-value" id="metricMonthlyPayroll" style="color: var(--primary); font-size: 21px;">--</span>
+              <span class="metric-subtext">Net salary payout (PKR)</span>
+            </div>
+            <div class="metric-icon-box icon-denim">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+          </div>
+
+          <!-- Present Today -->
+          <div class="metric-card">
+            <div class="metric-info">
+              <span class="metric-title">Present Today</span>
+              <span class="metric-value" id="metricPresentToday" style="color: #059669;">--</span>
+              <span class="metric-subtext">Biometric verified</span>
+            </div>
+            <div class="metric-icon-box icon-green">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            </div>
+          </div>
+
+          <!-- Absent Today -->
+          <div class="metric-card">
+            <div class="metric-info">
+              <span class="metric-title">Absent Today</span>
+              <span class="metric-value" id="metricAbsentToday" style="color: var(--danger);">--</span>
+              <span class="metric-subtext">Unapproved absences</span>
+            </div>
+            <div class="metric-icon-box icon-red">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </div>
+          </div>
+
+          <!-- On Leave -->
+          <div class="metric-card">
+            <div class="metric-info">
+              <span class="metric-title">On Leave</span>
+              <span class="metric-value" id="metricLeaveEmployees" style="color: var(--warning);">--</span>
+              <span class="metric-subtext">Approved leave count</span>
+            </div>
+            <div class="metric-icon-box icon-amber">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+          </div>
+
+          <!-- Textile Departments -->
+          <div class="metric-card">
+            <div class="metric-info">
+              <span class="metric-title">Textile Depts</span>
+              <span class="metric-value" id="metricTotalDepartments">18</span>
+              <span class="metric-subtext">Cutting, Stitching, Wash etc.</span>
+            </div>
+            <div class="metric-icon-box icon-purple">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            </div>
+          </div>
+        </section>
+
+        <!-- Charts Grid -->
+        <section class="dashboard-grid">
+          <!-- Department Payroll Expense Bar Chart (in PKR) -->
+          <div class="chart-card">
+            <div class="card-header-flex">
+              <div>
+                <h2 class="card-title">Department Payroll Disbursement (PKR)</h2>
+                <p class="card-subtitle">Monthly salary expenditure across textile plant operations</p>
+              </div>
+              <a href="payroll.html" class="btn btn-secondary btn-sm">Process Payroll &rarr;</a>
+            </div>
+            <div class="chart-container">
+              <canvas id="payrollExpenseChart"></canvas>
+            </div>
+          </div>
+
+          <!-- Textile Department Headcount Doughnut Chart -->
+          <div class="chart-card">
+            <div class="card-header-flex">
+              <div>
+                <h2 class="card-title">Textile Department Workforce</h2>
+                <p class="card-subtitle">Staff distribution across plant lines</p>
+              </div>
+            </div>
+            <div class="chart-container">
+              <canvas id="departmentDistributionChart"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bottom Grid: Recent Additions & Today's Attendance Overview -->
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px;">
+          <!-- Recent Additions Table -->
+          <div class="content-card" style="margin-bottom: 0;">
+            <div class="content-card-header">
+              <div>
+                <h3 class="card-title">Recent Workforce Additions</h3>
+                <p class="card-subtitle">Latest employees onboarded to the factory roster</p>
+              </div>
+              <a href="employees.html" class="btn btn-secondary btn-sm">View Full Directory</a>
+            </div>
+            <div class="table-responsive">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Staff Name & ID</th>
+                    <th>Department</th>
+                    <th>Designation</th>
+                    <th>Shift</th>
+                    <th>Status</th>
+                    <th>Basic (PKR)</th>
+                  </tr>
+                </thead>
+                <tbody id="recentEmployeesTableBody">
+                  <tr>
+                    <td colspan="6" style="text-align: center; padding: 24px;">
+                      <div class="loading-spinner"></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Today's Attendance Snapshot -->
+          <div class="content-card" style="margin-bottom: 0;">
+            <div class="content-card-header">
+              <h3 class="card-title">Today's Plant Attendance</h3>
+              <a href="attendance.html" class="btn btn-secondary btn-sm">Audit</a>
+            </div>
+            <div style="padding: 20px 24px;">
+              <div style="display: flex; flex-direction: column; gap: 12px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 9px 14px; background: #ecfdf5; border-radius: 8px;">
+                  <span style="font-weight: 600; color: #065f46;">Present</span>
+                  <span id="attPresentCount" style="font-weight: 800; font-size: 16px; color: #065f46;">--</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 9px 14px; background: #fef2f2; border-radius: 8px;">
+                  <span style="font-weight: 600; color: #991b1b;">Absent</span>
+                  <span id="attAbsentCount" style="font-weight: 800; font-size: 16px; color: #991b1b;">--</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 9px 14px; background: #fffbeb; border-radius: 8px;">
+                  <span style="font-weight: 600; color: #92400e;">Approved Leave</span>
+                  <span id="attLeaveCount" style="font-weight: 800; font-size: 16px; color: #92400e;">--</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 9px 14px; background: #f0f9ff; border-radius: 8px;">
+                  <span style="font-weight: 600; color: #075985;">Half Day</span>
+                  <span id="attHalfDayCount" style="font-weight: 800; font-size: 16px; color: #075985;">--</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 9px 14px; background: #fff7ed; border-radius: 8px;">
+                  <span style="font-weight: 600; color: #c2410c;">Late Arrivals</span>
+                  <span id="attLateCount" style="font-weight: 800; font-size: 16px; color: #c2410c;">--</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 9px 14px; background: #e0ecf8; border-radius: 8px;">
+                  <span style="font-weight: 600; color: var(--denim);">Plant Overtime</span>
+                  <span id="attTotalOTHours" style="font-weight: 800; font-size: 15px; color: var(--denim);">--</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Shared App & Dashboard Scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
